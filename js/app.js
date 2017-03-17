@@ -16,7 +16,8 @@ angular.module('myApp', ['ui.router'])
             })
             .state('unitConverter', {
                 url: '/unitconverter',
-                templateUrl: './views/unitconverter.html'
+                templateUrl: './views/unitconverter.html',
+                controller: 'unitConverterController'
             })
             .state('currencyConverter', {
                 url: '/currencyconverter',

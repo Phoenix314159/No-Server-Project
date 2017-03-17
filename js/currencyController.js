@@ -4,7 +4,13 @@ angular.module('myApp').controller('currencyController', function ($scope, mainS
         console.log(result);
         $scope.data = result;
         $scope.arrayOfCurrencies = mainService.arrayOfCurrencies;
-        $scope.dollarConverted = $scope.dollar * $scope.data.rate;
+        $scope.dollarConverted = ($scope.dollar * $scope.data.rate);
+        if($scope.dollar == '') {
+            $scope.myValue = false;
+        }else{
+            $scope.myValue = true;
+        }
+
         // $scope.convertCurrency = () => {
         //     $scope.dollarConverted =  $scope.data * $scope.dollar;
         var bouncespeed = 450;
@@ -28,6 +34,7 @@ angular.module('myApp').controller('currencyController', function ($scope, mainS
         }
 
 
-    })
+    });
+    $scope.countries = mainService.countryData;
 
 });

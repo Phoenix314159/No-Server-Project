@@ -1,27 +1,18 @@
-<h1>Unit Convereter</h1>
+<link rel="stylesheet" href="./styles/unitconverter.css">
+<div class="main">
+    <h1>Unit Converter</h1>
 
-<img src="https://lh5.ggpht.com/8eMGVsNwGYiAJnMkdmTPX-Gz93uWtueUyGP1pDK7winQoMqzwQ6fsONz3LkUXuZQ5-o=w300"/>
+    <img src="https://lh5.ggpht.com/8eMGVsNwGYiAJnMkdmTPX-Gz93uWtueUyGP1pDK7winQoMqzwQ6fsONz3LkUXuZQ5-o=w300"/>
+    <!--<div style="width:238px;height:400px;margin:0px auto;">-->
+        <!--<div style="width:99.5%;border:1px solid #000000;border-top:none;border-bottom:none;text-align:center;-->
+	<!--height:24px;font-size:16px;padding:5px 0px 0px 0px;border-top-right-radius:5px; border-top-left-radius:5px;-->
+	<!--background-color:#1272E8;color:#FFFFFF; font-weight:bold;"><a href="http://www.theunitconverter.com/"-->
+                                                                  <!--style="text-decoration:none;" rel="nofollow">Unit-->
+                                                                                                               <!--Converter</a>-->
+        <!--</div>-->
+        <!--<script type="text/javascript"-->
+                <!--src="http://ww.theunitconverter.com/converter.php?l=en&c=1&a=C72020&b=000000&s=weight">-->
 
-
-<label>Model value: {{ value }}</label>
-
-<br/><br/>
-
-<label>
-	Convert from
-	<select ng-init="convertFrom = convertFrom || options[1].value" ng-model="convertFrom"
-	        ng-options="opt.value as opt.name for opt in options"></select>
-	to
-	<select ng-init="convertTo = convertTo || options[0].value" ng-model="convertTo"
-	        ng-options="opt.value as opt.name for opt in options"></select>
-</label>
-
-<br/><br/>
-
-<label for="e" class="">
-	Converted value
-	<input id="e" ng-model="value" type="text" placeholder="0" angular-unit-converter convert-from="{{ convertFrom }}"
-	       convert-to="{{ convertTo }}"/>
-</label>
-
-<br/><br/>
+        <!--</script>-->
+    </div>
+</div>

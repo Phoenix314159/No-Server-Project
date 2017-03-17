@@ -1,4 +1,13 @@
-.main{
+#main {
     margin-left: 35%;
-    margin-top: 10%;
+    margin-top: 6%;
 }
+#head{
+    margin-left: 36%;
+    margin-top: 5%;
+}
+#head span{
+    font-size:50px;
+    font-family: 'Fjalla One', sans-serif;
+}
+

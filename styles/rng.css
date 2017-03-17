@@ -1,11 +1,16 @@
 .dude2{
-    margin-left: 41%;
+    margin-left: 33%;
     margin-top: 5%;
 }
 .dude2 img{
     position: relative;
     left:10%;
     bottom:2%;
+}
+#inputs2:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 form div{
     display:block;

@@ -1,52 +1,79 @@
-#box img{
-    height:50%;
+@keyframes picswitch {
+    0% {
+        background-image: url("https://thumb9.shutterstock.com/display_pic_with_logo/62532/62532,1248693418,5/stock-photo-money-background-high-resolution-picture-34305457.jpg");
+    }
+    20% {
+        background-image: url("http://www.traveller.org/australia/images/australia-20f.jpg");
+    }
+    40% {
+        background-image: url("http://www.traveller.org/china/currency/china-1f.jpg");
+    }
+    80% {
+        background-image: url("http://www.traveller.org/currency/200euror.jpg");
+    }
+    100% {
+        background-image: url("http://www.traveller.org/greece/images/greece-200f.jpg");
+    }
+
+}
+
+#slide {
+    /*background-image: url("https://thumb9.shutterstock.com/display_pic_with_logo/62532/62532,1248693418,5/stock-photo-money-background-high-resolution-picture-34305457.jpg");*/
+    height: 100%;
+    width: 100%;
+    background-position: 50%;
+    animation-name: picswitch;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    z-index: -2;
+}
+
+#box img {
+    height: 50%;
     width: 50%;
-
-}
-#main{
-    background-image: url("https://thumb9.shutterstock.com/display_pic_with_logo/62532/62532,1248693418,5/stock-photo-money-background-high-resolution-picture-34305457.jpg");
 }
 
-#dude2{
+#main {
+    position: relative;
+    right: 18%
+}
+
+#dude2 {
     margin-left: 0%;
     margin-top: 5%;
     font-size: 40px;
     text-align: center;
 }
-#input{
-    display:block;
-}
-#dollar1{
+
+#input {
     display: block;
 }
-#input{
+
+#dollar1 {
+    display: block;
+}
+
+#input {
     display: block;
     margin-left: 45%;
 
 }
-#filter{
+
+#filter {
     font-size: 40px;
     text-align: center;
 }
-#input h2{
+
+#input h2 {
     position: relative;
     right: 3%;
 }
 
-.wrapper1{
+.wrapper1 {
 
-    display:flex;
+    display: flex;
     justify-content: space-around;
     font-size: 40px;
-
-}
-.wrapper2{
-
-}
-.wrapper3{
-
-}
-.wrapper4{
 
 }
 
