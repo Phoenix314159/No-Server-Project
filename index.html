@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>ToolBox</title>
+		<link rel="stylesheet" href="styles/indexStyle.css">
+		<link rel="stylesheet" href="styles/calculatorStyle.css">
+		<link rel="stylesheet" href="styles/about.css">
+		<link rel="stylesheet" href="styles/stopWatch.css">
+		<link rel="stylesheet" href="styles/rng.css">
+
+	</head>
+	<body>
+		<main>
+			<div class="wrapper">
+				<div class="box"><a ui-sref="home">Home</a></div>
+				<div class="box"><a ui-sref="currencyConverter"> Currency Converter</a></div>
+				<div class="box"><a ui-sref="calculator">Calculator</a></div>
+				<div class="box"><a ui-sref="stopwatch">Stopwatch</a></div>
+				<div class="box"><a ui-sref="unitConverter">Unit Converter</a></div>
+				<div class="box"><a ui-sref="randomNumberGenerator">Random Number Generator</a></div>
+			</div>
+
+			<div ui-view></div>
+		</main>
+
+		<script
+				src="https://code.jquery.com/jquery-3.1.1.js"
+				integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+				crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+
+		<script src="js/app.js"></script>
+		<script src="js/currencyController.js"></script>
+		<script src="js/calculatorController.js"></script>
+		<script src="js/randomController.js"></script>
+		<script src="js/stopwatchController.js"></script>
+		<script src="js/unitConverterController.js"></script>
+		<script src="js/mainService.js"></script>
+		<script src="js/unitConverterDirective.js"></script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+body{
+    background-color: #00ffe9;
+}
+main{
+    margin-left: 0%;
+    margin-top: 1%;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+    background-color: green;
+}
+.box3 p{
+    font-size: 70px;
+}

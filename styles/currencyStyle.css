@@ -1,0 +1,52 @@
+#box img{
+    height:50%;
+    width: 50%;
+
+}
+#main{
+    background-image: url("https://thumb9.shutterstock.com/display_pic_with_logo/62532/62532,1248693418,5/stock-photo-money-background-high-resolution-picture-34305457.jpg");
+}
+
+#dude2{
+    margin-left: 0%;
+    margin-top: 5%;
+    font-size: 40px;
+    text-align: center;
+}
+#input{
+    display:block;
+}
+#dollar1{
+    display: block;
+}
+#input{
+    display: block;
+    margin-left: 45%;
+
+}
+#filter{
+    font-size: 40px;
+    text-align: center;
+}
+#input h2{
+    position: relative;
+    right: 3%;
+}
+
+.wrapper1{
+
+    display:flex;
+    justify-content: space-around;
+    font-size: 40px;
+
+}
+.wrapper2{
+
+}
+.wrapper3{
+
+}
+.wrapper4{
+
+}
+

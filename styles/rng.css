@@ -1,0 +1,27 @@
+.dude2{
+    margin-left: 41%;
+    margin-top: 5%;
+}
+.dude2 img{
+    position: relative;
+    left:10%;
+    bottom:2%;
+}
+form div{
+    display:block;
+}
+.dude2 form button{
+    position: relative;
+    left:20%;
+}
+span{
+    font-size: 30px;
+}
+.result{
+    position: relative;
+    left:20%;
+    font-size: 70px;
+}
+button span{
+    font-size: 30px;
+}

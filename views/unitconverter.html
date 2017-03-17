@@ -1,0 +1,27 @@
+<h1>Unit Convereter</h1>
+
+<img src="https://lh5.ggpht.com/8eMGVsNwGYiAJnMkdmTPX-Gz93uWtueUyGP1pDK7winQoMqzwQ6fsONz3LkUXuZQ5-o=w300"/>
+
+
+<label>Model value: {{ value }}</label>
+
+<br/><br/>
+
+<label>
+	Convert from
+	<select ng-init="convertFrom = convertFrom || options[1].value" ng-model="convertFrom"
+	        ng-options="opt.value as opt.name for opt in options"></select>
+	to
+	<select ng-init="convertTo = convertTo || options[0].value" ng-model="convertTo"
+	        ng-options="opt.value as opt.name for opt in options"></select>
+</label>
+
+<br/><br/>
+
+<label for="e" class="">
+	Converted value
+	<input id="e" ng-model="value" type="text" placeholder="0" angular-unit-converter convert-from="{{ convertFrom }}"
+	       convert-to="{{ convertTo }}"/>
+</label>
+
+<br/><br/>
