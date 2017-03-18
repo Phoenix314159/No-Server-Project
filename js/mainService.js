@@ -24,10 +24,13 @@ angular.module('myApp').service('mainService', function ($http) {
 
     this.operators = ['CLEAR','+', '-', '*', '/', 'squareroot(b)', 'exponent(a,b)','(a^2 + b^2)'];
 
-    this.random = (c,d) => {
+    this.random12 = (min, max) => {
 
-        return Math.floor((Math.random() * d) + c);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+
     }
+
+
 
 
 

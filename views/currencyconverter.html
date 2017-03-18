@@ -1,16 +1,19 @@
+
 <link rel="stylesheet" href="./styles/currencyStyle.css">
 
+
 <div id="main">
-    <div id="slide">$$</div>
+    <div id="slide"></div>
     <div id="dude2">
         <h2>Currency Converter</h2>
         <div>Base = $1.00 US</div>
     </div>
     <div id="input">
-        <input my-dom-directive id="dollar1" placeholder="enter amount to covert here" ng-model="dollar"/>
+        <input my-dom-directive id="dollar1"  ng-model="dollar"/>
         <h2>Filter by Country Name</h2>
-        <input my-dom-directive placeholder="filter by country" ng-model="countryFilter"/>
+        <input my-dom-directive  ng-model="countryFilter"/>
     </div>
+    <br/>
     <div class="wrapper1">
         <div class="wrapper2">
             <div ng-repeat="item in data | filter: countryFilter"> {{item.currency}}</div>
@@ -22,7 +25,7 @@
             <div ng-repeat="item in data | filter: countryFilter"> {{item.rate}}</div>
         </div>
         <div class="wrapper4">
-            <div ng-show="myValue" ng-repeat="item in data | filter: countryFilter"> {{(item.rate * dollar).toFixed(4)}}</div>
+            <div ng-show="myValue" ng-repeat="item in data | filter: countryFilter"> {{(item.rate * dollar).toFixed(2)}}</div>
         </div>
     </div>
 </div>

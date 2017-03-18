@@ -2,9 +2,55 @@
      position: relative;
      left:34%;
      margin-top: 3%;
+     font-family: 'Fjalla One', sans-serif;
  }
 #inputs:hover{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+}
+@keyframes imgAnimate1 {
+    0% {
+        bottom:15vh;
+        right:40vw;
+    }
+    20% {bottom:5vh;
+        right:20vw;
+
+    }
+    40% {
+
+        bottom: 5vh;
+        right:50vw;
+    }
+    80% {bottom: 10vh;
+        right:50vw;
+
+    }
+    100% {
+        bottom: 10vh;
+        right:20vw;
+    }
+
+}
+
+#cool {
+    position: fixed;
+    animation-name: imgAnimate1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border: 5px solid black;
+    border-radius: 100%;
+}
+#inputs input{
+    font-size: 15px;
+    height: 30px;
+    width:140px;
+}
+#inputs{
+    font-size: 30px;
+}
+select.custom{
+    min-height: 30px;
+    font-size: 30px;
 }

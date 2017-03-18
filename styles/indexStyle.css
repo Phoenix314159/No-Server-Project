@@ -1,9 +1,13 @@
+@keyframes dollar {
+    
+}
 body{
     background-color: #00ffe9;
 }
 main{
     margin-left: 0%;
     margin-top: 1%;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .wrapper{
@@ -16,7 +20,8 @@ main{
     height: 100px;
     width: 100px;
     border-radius: 10%;
-    background-color: green;
+    background-color: #3b73e2;
+    border: 3px solid black;
 }
 .box p{
     text-align:center;
@@ -27,6 +32,7 @@ main{
 }
 .box p a {
     text-decoration: none ;
+    color: inherit;
 }
 .box p a:hover {
     color:white;
@@ -40,5 +46,19 @@ main{
 }
 .box3 p{
     font-size: 70px;
+}
+.side{
+    position: relative;
+    left:11%;
+    bottom:6%;
+    font-size: 120px;
+    font-family: 'Open Sans', sans-serif;
+}
+.side1{
+    position: relative;
+    left:82%;
+    bottom:12%;
+    font-size: 120px;
+    font-family: 'Open Sans', sans-serif;
 }
 

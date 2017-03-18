@@ -5,10 +5,10 @@ angular.module('myApp').controller('currencyController', function ($scope, mainS
         $scope.data = result;
         $scope.arrayOfCurrencies = mainService.arrayOfCurrencies;
         $scope.dollarConverted = ($scope.dollar * $scope.data.rate);
-        if($scope.dollar == '') {
-            $scope.myValue = false;
-        }else{
+        if($scope.dollar !== null) {
             $scope.myValue = true;
+        }else{
+            $scope.myValue = false;
         }
 
         // $scope.convertCurrency = () => {

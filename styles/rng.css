@@ -7,6 +7,41 @@
     left:10%;
     bottom:2%;
 }
+@keyframes imgAnimate2 {
+    0% {
+        bottom:15vh;
+        right:40vw;
+    }
+    20% {
+        bottom:10vh;
+        right:50vw;
+
+    }
+    40% {
+
+        bottom: 20vh;
+        right:50vw;
+    }
+    80% {
+        bottom: 10vh;
+        right:50vw;
+
+    }
+    100% {
+        bottom: 20vh;
+        right:30vw;
+    }
+
+}
+
+
+
+#dice{
+    position: fixed;
+    animation-name: imgAnimate2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 #inputs2:hover{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);

@@ -1,13 +1,79 @@
 #main {
     margin-left: 35%;
-    margin-top: 6%;
+    margin-top: 1%;
+
 }
+
 #head{
     margin-left: 36%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 #head span{
     font-size:50px;
     font-family: 'Fjalla One', sans-serif;
+}
+
+@keyframes imgAnimate {
+    0% {
+        bottom:30vh;
+        right:40vw;
+    }
+    20% {bottom:10vh;
+        right:20vw;
+
+    }
+    40% {
+      bottom: 30vh;
+        right:50vw;
+    }
+    80% {bottom: 10vh;
+        right:50vw;
+
+    }
+    100% {
+       bottom: 20vh;
+        right:20vw;
+    }
+
+}
+
+#imageAnimation {
+    position: fixed;
+    animation-name: imgAnimate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border: 5px solid black;
+
+
+}
+@keyframes imgAnimate3 {
+    0% {
+        top:12vh;
+        right:0vw;
+    }
+    20% {bottom:5vh;
+        left:20vw;
+
+    }
+    40% {
+
+        bottom: 20vh;
+        right:50vw;
+    }
+    80% {bottom: 20vh;
+        right:20vw;
+
+    }
+    100% {
+        bottom: 10vh;
+        right:10vw;
+    }
+
+}
+.both{
+    position: fixed;
+    animation-name: imgAnimate3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
