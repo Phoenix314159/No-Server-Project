@@ -1,4 +1,10 @@
+<link rel="stylesheet" href="styles/stopWatch.css">
 <div class="dude">
-	<img src="https://images-na.ssl-images-amazon.com/images/I/71AJjFBOBnL.png"/>
+    <img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/71AJjFBOBnL.png"/>
 </div>
-<script src="stopwatch.min.js"></script>
+<div class="main3">
+    <h3>{{stopwatch.elapsedStr('mm:ss')}}</h3>
+    <button yellow-directive ng-click="stopwatch.start()">Start</button>
+    <button yellow-directive ng-click="stopwatch.stop()">Stop</button>
+    <button yellow-directive ng-click="stopwatch.reset()">Reset</button>
+</div>

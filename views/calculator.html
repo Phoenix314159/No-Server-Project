@@ -1,21 +1,19 @@
-<!--<div class="container slider">-->
-<!--<img ng-repeat="slide in slides" class="slide" ng-src="{{slide.image}}">-->
-<!--</div>-->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link rel="stylesheet" href="styles/calculatorStyle.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/ar-ly.js"></script>
 <div class="box2">
-	<div id="cool"><img
-			src="https://lh3.googleusercontent.com/L_69LVIYsY0ICSwH7oomZw-EUwjKrLilsVzZy0uV0otqV1ZcFMux9DyWv7h-qHqEGKvi=w300"/>
-	</div>
-	<br/>
-	<br/>
-	<p id="inputs">a&nbsp;&nbsp;<input my-dom-directive type="text" ng-model="a" placeholder="enter a number"></p>
-	<p id="inputs">b&nbsp;&nbsp;<input my-dom-directive type="text" ng-model="b" placeholder="enter a number"></p>
-	<select class="custom" ng-model="operator" ng-options="item for item in operators"></select>
+    <div id="cool"><img class="img-responsive"
+                        src="https://lh3.googleusercontent.com/L_69LVIYsY0ICSwH7oomZw-EUwjKrLilsVzZy0uV0otqV1ZcFMux9DyWv7h-qHqEGKvi=w300"/>
 
+        <div id="cool2">{{ result() % result() === 0 ? result() : result().toFixed(2) }}</div>
+    </div>
+    <br/>
+    <br/>
+    <div id="box44">
+        <p id="inputs">a&nbsp;&nbsp;<input yellow-directive type="text" ng-model="a" placeholder="enter a number"></p>
+        <p id="inputs">b&nbsp;&nbsp;<input yellow-directive type="text" ng-model="b" placeholder="enter a number"></p>
 
-	<div class="box3">
-		<p>{{ result() % result() === 0 ? result() : result().toFixed(4) }}</p>
-	</div>
+        <select class="custom" ng-model="operator" ng-options="item for item in operators"></select>
+    </div>
+
 </div>
 

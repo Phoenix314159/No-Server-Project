@@ -1,4 +1,57 @@
-.dude{
+.dude {
     margin-left: 32%;
     margin-top: 3%;
+    position: fixed;
+    animation-name: imgAnimate4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.main3 {
+    margin-left: 41%;
+    margin-top: 3%;
+}
+
+.main3 h3 {
+    font-size: 60px;
+}
+
+button {
+    position: relative;
+    left: 5%;
+}
+
+button:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+h3 {
+    position: relative;
+    left: 5%
+}
+
+@keyframes imgAnimate4 {
+    0% {
+        bottom: 10vh;
+        right: 40vw;
+    }
+    20% {
+        bottom: 5vh;
+        right: 20vw;
+    }
+    40% {
+        bottom: 5vh;
+        right: 50vw;
+    }
+    80% {
+        bottom: 10vh;
+        right: 50vw;
+    }
+    100% {
+        bottom: 10vh;
+        right: 20vw;
+    }
+
 }

@@ -1,3 +1,5 @@
-angular.module('stopwatchController',function ($scope) {
+angular.module('myApp').controller('stopwatchController', function ($scope, stopWatchService) {
+
+    $scope.stopwatch = stopWatchService.getInstance();
 
 });

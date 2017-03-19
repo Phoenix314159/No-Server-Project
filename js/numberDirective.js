@@ -1,10 +1,9 @@
-angular.module('myApp').directive('numberDirective',function ($timeout) {
+angular.module('myApp').directive('numberDirective', function ($timeout) {
     return {
         restrict: "E",
         template: '<div>{{number}}</div>',
-        link:  (scope,element,attrs) => {
-              scope.number = 10;
-              // console.log(number);
+        link: (scope, element, attrs) => {
+            scope.number = 10;
             $timeout(() => {
                 scope.number = 9;
                 $timeout(() => {
@@ -24,19 +23,17 @@ angular.module('myApp').directive('numberDirective',function ($timeout) {
                                             $timeout(() => {
                                                 scope.number = 1;
                                                 $timeout(() => {
-                                                    $timeout(() => {
-                                                        scope.number = 'I\'M RICH!!!';
-                                                    },3000)
                                                     scope.number = '$10,000!!!';
-                                                },3000)
-                                            },1000)
-                                        },1000)
-                                    },1000)
-                                },1000)
-                            },1000)
-                        },1000)
-                    },1000)
-                },1000)
-            },1000)
+                                                }, 3000)
+                                            }, 1000)
+                                        }, 1000)
+                                    }, 1000)
+                                }, 1000)
+                            }, 1000)
+                        }, 1000)
+                    }, 1000)
+                }, 1000)
+            }, 1000)
+        }
     }
-}});
+});

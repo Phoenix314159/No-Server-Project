@@ -1,21 +1,22 @@
-<link rel="stylesheet" href="./styles/currencyStyle.css">
 <link rel="stylesheet" href="styles/rng.css">
 <div class="dude2">
-	<div id="shift">
-		<div id="dice"><img
-				src="https://lh3.ggpht.com/taN6Co1OQDw2rFWVrzlwLeAnA8QqdhSNu4B4jbyGqHpZGZsZZxENVns91Puefbz2Fg=w300"/>
-		</div>
-	</div>
-	<form>
-		<br/>
-		<div id="inputs2"><span>Enter a minimum number: </span> <input my-dom-directive type="text" ng-model="c"/></div>
-		<br/>
-		<div id="inputs2"><span>Enter a maximum number: </span><input my-dom-directive type="text" ng-model="d"/></div>
-		<br/>
-		<button my-dom-directive ng-click="result()"><span>Submit</span></button>
-	</form>
-	<br/>
-	<div class="result">
-		{{number}}
-	</div>
+    <div id="shift">
+        <div id="dice"><img
+                src="https://lh3.ggpht.com/taN6Co1OQDw2rFWVrzlwLeAnA8QqdhSNu4B4jbyGqHpZGZsZZxENVns91Puefbz2Fg=w300"/>
+        </div>
+    </div>
+    <form>
+        <br/>
+        <div id="inputs2"><span>Enter a minimum number: </span> <input yellow-directive -directive type="text"
+                                                                       ng-model="c"/></div>
+        <br/>
+        <div id="inputs2"><span>Enter a maximum number: </span><input yellow-directive directive type="text"
+                                                                      ng-model="d"/></div>
+        <br/>
+        <button yellow-directive ng-click="result()"><span>Generate</span></button>
+    </form>
+    <br/>
+    <div class="result">
+        {{ number }}
+    </div>
 </div>

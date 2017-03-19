@@ -5,6 +5,11 @@ angular.module('myApp', ['ui.router'])
                 url: '/',
                 templateUrl: './views/about.html'
             })
+            .state('currencyConverter', {
+                url: '/currencyconverter',
+                templateUrl: './views/currencyconverter.html',
+                controller: 'currencyController'
+            })
             .state('calculator', {
                 url: '/calculator',
                 templateUrl: './views/calculator.html',
@@ -12,24 +17,21 @@ angular.module('myApp', ['ui.router'])
             })
             .state('stopwatch', {
                 url: '/stopwatch',
-                templateUrl: './views/stopwatch.html'
+                templateUrl: './views/stopwatch.html',
+                controller: 'stopwatchController'
             })
-            .state('unitConverter', {
-                url: '/unitconverter',
-                templateUrl: './views/unitconverter.html',
-                controller: 'unitConverterController'
-            })
-            .state('currencyConverter', {
-                url: '/currencyconverter',
-                templateUrl: './views/currencyconverter.html',
-                controller:'currencyController'
-            })
+
             .state('randomNumberGenerator', {
                 url: '/randomnumbergenerator',
                 templateUrl: './views/randomnumbergenerator.html',
                 controller: 'randomController'
+            })
+            .state('pigLatin', {
+                url: '/piglatin',
+                templateUrl: './views/pigLatin.html',
+                controller: 'pigLatinController'
             });
-        $urlRouterProvider
-            .otherwise('/');
 
+        $urlRouterProvider
+            .otherwise('/')
     });

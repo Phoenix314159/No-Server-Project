@@ -1,35 +1,45 @@
-.box2{
-     position: relative;
-     left:34%;
-     margin-top: 3%;
-     font-family: 'Fjalla One', sans-serif;
- }
-#inputs:hover{
+.box2 {
+    position: relative;
+    left: 34%;
+    margin-top: 3%;
+    font-family: 'Fjalla One', sans-serif;
+}
+#cool2{
+    position: absolute;
+    left: 30%;
+    top:21%;
+    font-size: 140px;
+}
+
+#inputs:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
+
 @keyframes imgAnimate1 {
     0% {
-        bottom:15vh;
-        right:40vw;
+        bottom: 15vh;
+        right: 40vw;
     }
-    20% {bottom:5vh;
-        right:20vw;
+    20% {
+        bottom: 5vh;
+        right: 20vw;
 
     }
     40% {
 
         bottom: 5vh;
-        right:50vw;
+        right: 50vw;
     }
-    80% {bottom: 10vh;
-        right:50vw;
+    80% {
+        bottom: 10vh;
+        right: 50vw;
 
     }
     100% {
         bottom: 10vh;
-        right:20vw;
+        right: 20vw;
     }
 
 }
@@ -42,15 +52,29 @@
     border: 5px solid black;
     border-radius: 100%;
 }
-#inputs input{
+
+#inputs input {
     font-size: 15px;
     height: 30px;
-    width:140px;
+    width: 140px;
+    color:black;
 }
-#inputs{
+
+#inputs {
     font-size: 30px;
 }
-select.custom{
+
+select.custom {
     min-height: 30px;
     font-size: 30px;
+}
+
+#box44 {
+    position: relative;
+    left: 8%;
+}
+
+.box3 {
+    position: absolute;
+    left: 8%;
 }
