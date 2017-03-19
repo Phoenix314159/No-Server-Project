@@ -11,6 +11,30 @@
 #head span {
     font-size: 50px;
     font-family: 'Fjalla One', sans-serif;
+
+}
+#head h1 span{
+    animation-name: headswitch;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes headswitch {
+    0% {
+        color: #E3ABF2;
+    }
+    20% {
+        color: #ABF2D6;
+    }
+    40% {
+        color: #7888E6;
+    }
+    80% {
+        color: #90AA31;
+    }
+    100% {
+        color: #F7A18E;
+    }
+
 }
 
 @keyframes imgAnimate {
