@@ -13,7 +13,7 @@ angular.module('myApp').service('currencyService', function ($http) {
             url: 'http://api.fixer.io/latest?base=USD'
         }).then(result => {
             let data = result.data.rates;
-            for (var a in data) {
+            for (let a in data) {
                 arr.push({currency: a, rate: data[a]});
             }
             return arr;
