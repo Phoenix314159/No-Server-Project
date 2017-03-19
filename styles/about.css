@@ -1,11 +1,11 @@
 #main {
     margin-left: 35%;
-    margin-top: 1%;
+    margin-top: 5%;
 }
 
 #head {
     margin-left: 36%;
-    margin-top: 2%;
+    margin-top: 6%;
 }
 
 #head span {
@@ -39,7 +39,7 @@
 
 @keyframes imgAnimate {
     0% {
-        bottom: 30vh;
+        bottom: 10vh;
         right: 40vw;
     }
     20% {
@@ -48,16 +48,16 @@
 
     }
     40% {
-        bottom: 30vh;
+        bottom: 10vh;
         right: 50vw;
     }
     80% {
         bottom: 10vh;
-        right: 50vw;
+        right: 40vw;
 
     }
     100% {
-        bottom: 20vh;
+        bottom: 10vh;
         right: 20vw;
     }
 

@@ -30,7 +30,11 @@ angular.module('myApp', ['ui.router'])
                 url: '/piglatin',
                 templateUrl: './views/pigLatin.html',
                 controller: 'pigLatinController'
-            });
+            })
+            .state('tenThousand',{
+                url: '/tenthousand',
+                templateUrl: './views/ten-thousand.html'
+            })
 
         $urlRouterProvider
             .otherwise('/')
