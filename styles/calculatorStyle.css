@@ -4,10 +4,11 @@
     margin-top: 3%;
     font-family: 'Fjalla One', sans-serif;
 }
-#cool2{
+
+#cool2 {
     position: absolute;
     left: 30%;
-    top:21%;
+    top: 21%;
     font-size: 140px;
 }
 
@@ -57,7 +58,7 @@
     font-size: 25px;
     height: 30px;
     width: 140px;
-    color:black;
+    color: black;
 }
 
 #inputs {
