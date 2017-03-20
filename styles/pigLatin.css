@@ -1,10 +1,16 @@
 img {
     position: relative;
-    right: 37%;
+    right: 22.5%;
+    margin-bottom: 2%;
+    border: solid 5px black;
 }
 
 #wrapper89 {
     margin-left: 3%;
+
+}
+#wrapper89 h1{
+    margin-top: 2%;
 }
 
 button {
@@ -93,7 +99,7 @@ h1 {
     font-size: 35px;
     font-family: 'Baloo Bhaina', cursive;
     margin-top: 10%;
-    margin-right: 75%;
+    margin-right: 77%;
     text-align: center;
     border: 2px solid black;
     padding:3%
