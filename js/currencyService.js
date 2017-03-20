@@ -10,7 +10,7 @@ angular.module('myApp').service('currencyService', function ($http) {
     this.exchangeRates = () => {
         return $http({
             method: 'GET',
-            url: 'http://api.fixer.io/latest?base=USD'
+            url: 'https://api.fixer.io/latest?base=USD'
         }).then(result => {
             let data = result.data.rates;
             for (let a in data) {

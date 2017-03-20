@@ -1,10 +1,21 @@
 <link rel="stylesheet" href="styles/stopWatch.css">
 <div class="dude">
-    <img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/71AJjFBOBnL.png"/>
+	<img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/71AJjFBOBnL.png"/>
 </div>
 <div class="main3">
-    <h3>{{stopwatch.elapsedStr('mm:ss')}}</h3>
-    <button yellow-directive ng-click="stopwatch.start()">Start</button>
-    <button yellow-directive ng-click="stopwatch.stop()">Stop</button>
-    <button yellow-directive ng-click="stopwatch.reset()">Reset</button>
+
+	<h3>{{stopwatch.elapsedStr('mm:ss')}}</h3>
+	<button yellow-directive ng-click="stopwatch.start()">Start</button>
+	<button yellow-directive ng-click="stopwatch.stop()">Stop</button>
+	<button yellow-directive ng-click="stopwatch.reset()">Reset</button>
+</div>
+<div class="main32">
+	<div class="counter" ng-show="showValue" ><p>{{counter}}</p></div>
+	<div class="block1"><input class="form-group" yellow-directive ng-show="showBox" ng-model="counter" type="text" placeholder="enter # of seconds"/></div>
+	<div class="block2">
+		<button yellow-directive ng-click="countdown()">Start</button>
+		<button yellow-directive ng-click="stop()">Stop</button>
+		<button yellow-directive ng-click="reset()">Reset</button>
+	</div>
+
 </div>

@@ -1,37 +1,35 @@
 <link rel="stylesheet" href="styles/currencyStyle.css">
 <div id="main">
-    <div id="slide" class="img-responsive"></div>
-    <div id="dude2">
-        <h2>Currency Converter</h2>
-        <div>Base = $1.00 US</div>
-    </div>
-    <div id="input">
-        <input yellow-directive id="dollar1" ng-model="dollar2"/>
-        <h2>Filter by Country Name</h2>
-        <input yellow-directive ng-model="countryFilter"/>
-    </div>
-    <br/>
-    <div class="wrapper1">
+	<div id="slide" class="img-responsive"></div>
+	<div id="dude2">
+		<h2>Currency Converter</h2>
+		<div>Base = $1.00 US</div>
+	</div>
+	<div id="input">
+		<input type="number" class="form-group input-lg" yellow-directive id="dollar1" ng-model="dollar2"/>
 
-        <div class="wrapper2">
-            <div class="wrapper6">Currency Code</div>
-            <div ng-repeat="item in data | filter: countryFilter"> {{item.currency}}</div>
-        </div>
-        <div class="wrapper5">
-            <div class="wrapper7">Country Currency</div>
-            <div ng-repeat="item in countries | filter: countryFilter"> {{item}}</div>
-        </div>
-        <div class="wrapper3">
-            <div class="wrapper8">Rate</div>
-            <div ng-repeat="item in data | filter: countryFilter"> {{item.rate}}</div>
-        </div>
-        <div class="wrapper4">
-            <div class="wrapper9">Amount</div>
-            <div  ng-if="dollar2 == NaN || dollar2 == 0 ? false : true" ng-repeat="item in data | filter: countryFilter">
-                &nbsp;&nbsp;&nbsp; ${{(item.rate * dollar2).toFixed(2)}}
-            </div>
-        </div>
-    </div>
+	</div>
+	<br/>
+	<div class="wrapper1">
+		<div class="wrapper2">
+			<div class="wrapper6">Currency Code</div>
+			<div ng-repeat="item in data"> {{item.currency}}</div>
+		</div>
+		<div class="wrapper5">
+			<div class="wrapper7">Country Currency</div>
+			<div ng-repeat="item in countries"> {{item}}</div>
+		</div>
+		<div class="wrapper3">
+			<div class="wrapper8">Rate</div>
+			<div ng-repeat="item in data"> {{item.rate}}</div>
+		</div>
+		<div class="wrapper4">
+			<div class="wrapper9">Amount</div>
+			<div ng-if="dollar2 == NaN || dollar2 == 0 ? false : true" ng-repeat="item in data">
+				&nbsp;&nbsp;&nbsp; ${{(item.rate * dollar2).toFixed(2)}}
+			</div>
+		</div>
+	</div>
 </div>
 
 
