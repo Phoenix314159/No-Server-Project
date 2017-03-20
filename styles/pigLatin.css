@@ -44,7 +44,7 @@ h1 {
     font-family: 'Baloo Bhaina', cursive;
     position: absolute;
     right: 26%;
-    top: 75%;
+    top: 82%;
 
 }
 
@@ -84,9 +84,18 @@ h1 {
 
 .pig4 {
     position: absolute;
-    top: 76.5%;
+    top: 83.5%;
     left: 19.5%;
     font-size: 40px;
     font-family: 'Baloo Bhaina', cursive;
+}
+.meat{
+    font-size: 35px;
+    font-family: 'Baloo Bhaina', cursive;
+    margin-top: 10%;
+    margin-right: 75%;
+    text-align: center;
+    border: 2px solid black;
+    padding:3%
 }
 

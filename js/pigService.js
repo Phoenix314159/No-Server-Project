@@ -1,4 +1,4 @@
-angular.module('myApp').service('pigService', function () {
+angular.module('myApp').service('pigService', function ($http) {
     this.convertName = str => {
         let pigLatin = '';
         let regex = /[aeiou]/gi;
@@ -10,5 +10,12 @@ angular.module('myApp').service('pigService', function () {
             pigLatin = str.substr(vowelIndice) + str.substr(0, vowelIndice) + 'ay';
         }
         return pigLatin;
-    };
+    }
+    this.getPorkRate = () => {
+        return $http({
+            method: 'GET',
+            url: 'https://www.quandl.com/api/v3/datasets/ODA/PPORK_USD.csv?api_key=sdgQS4t-_yxNrMyJjKeQ'
+
+        })
+    }
 });
