@@ -1,0 +1,86 @@
+.dude2 {
+    margin-left: 33%;
+    margin-top: 5%;
+}
+
+.dude2 img {
+    position: relative;
+    left: 10%;
+    bottom: 2%;
+}
+.dude4{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+@keyframes imgAnimate2 {
+    0% {
+        bottom: 15vh;
+        right: 40vw;
+    }
+    20% {
+        bottom: 10vh;
+        right: 50vw;
+    }
+    40% {
+
+        bottom: 20vh;
+        right: 50vw;
+    }
+    80% {
+        bottom: 10vh;
+        right: 50vw;
+    }
+    100% {
+        bottom: 20vh;
+        right: 30vw;
+    }
+}
+
+#dice {
+    position: fixed;
+    animation-name: imgAnimate2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#inputs2:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#inputs2 input {
+    height: 30px;
+    font-size: 25px;
+    width: 140px;
+}
+
+form div {
+    display: block;
+}
+
+.dude2 form button {
+    position: relative;
+    left: 20%;
+}
+
+span {
+    font-size: 30px;
+}
+
+.result {
+    position: relative;
+    left: 20%;
+    font-size: 70px;
+}
+
+button span {
+    font-size: 30px;
+}
+button:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}

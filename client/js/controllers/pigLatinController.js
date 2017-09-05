@@ -10,13 +10,10 @@ angular.module('myApp').controller('pigLatinController', function ($scope, pigSe
     $scope.convertLastName = () => {
         $scope.cLastName = pigService.convertName($scope.lastName);
     }
-    $scope.getPorkRate = () => {
-
+    $scope.getRate = () => {
         pigService.getPorkRate().then(result => {
-
-            $scope.data = result.data;
+            $scope.data = result.data.data;
             $scope.showBox = true;
-
         })
     }
 });

@@ -14,8 +14,7 @@ angular.module('myApp').service('pigService', function ($http) {
     this.getPorkRate = () => {
         return $http({
             method: 'GET',
-            url: 'https://www.quandl.com/api/v3/datasets/ODA/PPORK_USD.csv?api_key=sdgQS4t-_yxNrMyJjKeQ'
-
+            url: '/api/pigdata'
         })
     }
 });

@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="styles/pigLatin.css">
 <div id="wrapper89">
-    <h1>Pig Latin Translator</h1>
+    <h1 class="header1">Pig Latin Translator</h1>
     <div class="pig3"><img class="img-responsive"
                            src= "https://images4.alphacoders.com/570/570516.jpg" width="65%" height="65%"/></div>
     <div class="meat" ng-show="showBox"> The current price of pork meat <br/>as of last quarter is: <br/>
@@ -15,13 +15,13 @@
                 <input yellow-directive class="fname form-group input-lg" type="text" placeholder="enter last name" ng-model="lastName"/>
                 <br/>
             </div>
-            <button class="box32 btn btn-primary btn-md"yellow-directive ng-click="convertFirstName(); convertLastName(); getPorkRate()">
+            <button class="box32 btn btn-primary btn-md" yellow-directive ng-click="convertFirstName(); convertLastName(); getRate()">
                 Translate
             </button>
         </div>
-        <div class="pig2">
-            <div ng-show="showText" class="pig4">Your name in Pig Latin is:</div>
-            <span>&nbsp; {{cFirstName}} &nbsp; {{cLastName}}</span>
-        </div>
+
+            <div  class="pig4">Your name in Pig Latin is:</div>
+            <span class="pig2">&nbsp; {{cFirstName}} &nbsp; {{cLastName}}</span>
+
     </div>
-</div>
+</div> <!--ng-show="showText"-->

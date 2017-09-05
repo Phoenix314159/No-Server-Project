@@ -1,8 +1,11 @@
 img {
     position: relative;
     right: 22.5%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     border: solid 5px black;
+}
+.header1 {
+    color: #00b0ff;
 }
 
 #wrapper89 {
@@ -43,19 +46,6 @@ h1 {
 
 .box34 {
     margin-top: 0%;
-
-}
-
-.pig2 {
-    margin-left: 30%;
-}
-
-.pig2 span {
-    font-size: 60px;
-    font-family: 'Baloo Bhaina', cursive;
-    position: absolute;
-    right: 26%;
-    top: 82%;
 
 }
 
@@ -100,10 +90,18 @@ h1 {
     font-size: 40px;
     font-family: 'Baloo Bhaina', cursive;
 }
-.meat{
-    font-size: 35px;
+.pig2 {
+    position: absolute;
+    top: 81.5%;
+    left: 47%;
+    font-size: 60px;
     font-family: 'Baloo Bhaina', cursive;
-    margin-top: 10%;
+}
+
+.meat{
+    font-size: 32px;
+    font-family: 'Baloo Bhaina', cursive;
+    margin-top: 3%;
     margin-right: 77%;
     text-align: center;
     border: 2px solid black;
