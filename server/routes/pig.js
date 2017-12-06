@@ -4,6 +4,8 @@ const config = require('../config/config'),
 module.exports = app => {
 
     app.get('/api/pigdata', async (req, res) => {
+        console.log(req.query.name)
+        console.log(req.params)
 
         let response = await axios.get(`${config.pigUrl}?${config.api_key}`);
 

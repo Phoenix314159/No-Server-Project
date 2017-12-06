@@ -1,5 +1,5 @@
 const gulp = require('gulp'),
-    $ = require('gulp-load-plugins')({
+  {htmlmin, sourcemaps: {init, write}, print, concat, ngAnnotate} = require('gulp-load-plugins')({
         pattern: ['gulp-*'],
         replaceString: /\bgulp[\-.]/,
         lazy: true,
@@ -9,7 +9,7 @@ const gulp = require('gulp'),
 
 gulp.task('views', () => {
     return gulp.src('../client/views/**/*')
-        .pipe($.htmlmin({
+        .pipe(htmlmin({
             collapseWhitespace: true,
             collapseInlineTagWhitespace: true,
             minifyJS: true,
@@ -22,11 +22,11 @@ gulp.task('views', () => {
 
 gulp.task('build-js', () => {
     return gulp.src('../client/js/**/*.js')
-        .pipe($.sourcemaps.init())
-        .pipe($.print())
-        .pipe($.concat('bundle.js'))
-        .pipe($.ngAnnotate())
-        .pipe($.sourcemaps.write('./'))
+        .pipe(init())
+        .pipe(print())
+        .pipe(concat('bundle.js'))
+        .pipe(ngAnnotate())
+        .pipe(write('./'))
         .pipe(gulp.dest('dist/js'));
 });
 
@@ -34,7 +34,7 @@ gulp.task('build-js', () => {
 gulp.task('build', ['views', 'build-js'], () => {
     return gulp.src('../client/index.html')
         .pipe(cachebust.references())
-        .pipe($.htmlmin({
+        .pipe(htmlmin({
             collapseWhitespace: true,
             collapseInlineTagWhitespace: true,
             minifyJS: true,
